@@ -10,11 +10,11 @@ BST<std::string> makeTree(const char* filename) {
   std::ifstream file(filename);
   std::string otvet;
   while (!file.eof()) {
-    char slovooobukva = file.get();
-    if (slovooobukva >= 'A' && slovooobukva <= 'Z')
-        slovooobukva = slovooobukva + ('a' - 'A');
-    if (slovooobukva >= 'a' && slovooobukva <= 'z') {
-      otvet = otvet + slovooobukva;
+    char slovoobukva = file.get();
+    if (slovoobukva >= 'A' && slovoobukva <= 'Z')
+        slovoobukva = slovoobukva + ('a' - 'A');
+    if (slovoobukva >= 'a' && slovoobukva <= 'z') {
+      otvet = otvet + slovoobukva;
     } else {
       BSTtree.add(result);
       otvet.clear();
