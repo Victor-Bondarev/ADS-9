@@ -14,7 +14,7 @@ BST<std::string> makeTree(const char* filename) {
   char dlina = ' ';
   while (!file.eof()) {
     while (dlina < 65 && (!file.eof())) {
-      file.get(str);
+      file.get(dlina);
     }
     while (dlina >= 65 && (!file.eof())) {
       if (dlina >= 65 && dlina <= 90) {
